@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Integrador de Aprendizaje - v1.1</title>
+    <!--Bootrsrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/65caae80ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!--SideBar-->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">
+                        <img src="img/Windows 11.png" alt="" class="img-logo">
+                        Sistemas Operativos
+                    </a>
+                </div>
+                <!--Navegacion de tabla de contenido-->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        producto integrador de aprendizaje
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#windows11" aria-expanded="false" aria-controls="windows11">
+                            <i class="fa-brands fa-windows pe-2"></i>
+                            windows 11
+                        </a>
+                        <ul id="windows11" class="sidebar-dropdown list-unstyled collapse text-capitalize" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="windows.html" class="sidebar-link">¿Que es?</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="historia.html" class="sidebar-link">Historia</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="cli.html" class="sidebar-link">CLI</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="kernell.html" class="sidebar-link">Kernell</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="archivos.html" class="sidebar-link">sistemas de archivos</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="concurrencia.html" class="sidebar-link">Concurrencia</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="dispositivos.html" class="sidebar-link">Dispositivos E/S</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#afunda" aria-expanded="false" aria-controls="afunda">
+                            <i class="fa-solid fa-folder-open pe-2"></i>
+                            Actividades Fundamentales
+                        </a>
+                        <ul id="afunda" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/ActivdadFundamental1_EQUIPO2_COMPLETADO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF2-SISOP-COMPLETO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF3-SISOP-EQ2_COMPLETO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 3</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF4-SISOP-COMPLETADO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#conclusion" aria-expanded="false" aria-controls="conclusion">
+                            <i class="fa-solid fa-flag pe-2"></i>
+                            Conclusiones
+                        </a>
+                        <ul id="conclusion" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="conclusiones.html" class="sidebar-link">Conclusion General</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="conclusiones.html" class="sidebar-link">Conclusion individual</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="acercade.html" class="sidebar-link text-capitalize">
+                            <i class="fa-solid fa-user pe-2"></i>
+                            Acerca de
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--Componentes principales-->
+        <div class="container main">
+            <nav class="row navbar navbar-expand px-3 border-bottom">
+                <!--Boton de hamburguesa-->
+                <div class="col-6">
+                    <button class="btn" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <!--Componentes de card glassmorph-->
+            <div class="row vh-25 mt-4 banner d-flex align-items-center justify-content-start">
+                <div class="col-sm-12 col-lg-6 text-white">
+                    <h1 class="card-title mb-4 text-capitalize">Dispositivos de<br><span class="h5 text-primary">E/S</span></h1>
+                    <!--Texto de la card-->
+                    <p class="card-text mb-4"> Aquellos aparatos electrónicos que permiten tanto introducir como extraer información de un sistema.
+                    </p>
+                </div>
+            </div>
+
+            <!--Cards informativas/seccion informativa-->
+
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 id="introduccion" class="heading-que-es text-primary"><span class="text-white">Dispositivos de </span>Entrada</h3>
+                                    <p class="para-que-es">
+                                        Estos dispositivos son fundamentales porque permiten que el usuario pueda hacer uso de la computadora e interactuar con ella.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/indevice.jpeg" style="top: -110%;" class="img-que-es" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/outputdevice.jpg" style="top: -90%;" class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-white">Dispositivos de <span class="text-primary">Salida</span></h3>
+                                    <p class="para-que-es">
+                                        Los dispositivos de salida son también llamados periféricos de salida y traducen la información de una computadora a formatos visuales, sonoros, impresos o de cualquier otra naturaleza, que puedan ser comprendidos por el usuario.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <footer class="bg-transparent text-white pt-5 pb-4 border-top border-white">
+                <div class="container text-center text-md-left">
+                    <div class="row text-center text-md-left">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">Sistemas Operativos</h5>
+                            <p>Página web elaborada con fines educativos sobre el sistema operativo <span class="text-primary text-capitalize">windows 11</span></p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">Windows 11</h5>
+                            <p>
+                                <a href="windows.html" class="text-reset">¿Qué es?</a>
+                            </p>
+                            <p>
+                                <a href="historia.html" class="text-reset">Historia</a>
+                            </p>
+                            <p>
+                                <a href="cli.html" class="text-reset">CLI</a>
+                            </p>
+                            <p>
+                                <a href="kernell.html" class="text-reset">Kernell</a>
+                            </p>
+                            <p>
+                                <a href="archivos.html" class="text-reset">Sistemas de Archivos</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">
+                                Más Enlaces
+                            </h5>
+                            <p>
+                                <a href="concurrencia.html" class="text-reset">Concurrencia</a>
+                            </p>
+                            <p>
+                                <a href="dispositivos.html" class="text-reset">Dispositivos de E/S</a>
+                            </p>
+                            <p>
+                                <a href="conclusiones.html" class="text-reset">Conclusiones</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">
+                                Actividades Funtamentales
+                            </h5>
+                            <p>
+                                <a href="act-fundamentales/ActivdadFundamental1_EQUIPO2_COMPLETADO.pdf" class="text-reset">Actividad Fundamental 1</a>
+                            </p>
+                            <p>
+                                <a href="act-fundamentales/AF2-SISOP-COMPLETO.pdf" class="text-reset">Activdad Fundamental 2</a>
+                            </p>
+                            <p>
+                                <a href="act-fundamentales/AF3-SISOP-EQ2_COMPLETO.pdf" class="text-reset">Actividad Fundamental 3</a>
+                            </p>
+                            <p>
+                                <a href="act-fundamentales/AF4-SISOP-COMPLETADO.pdf" class="text-reset">Actividad Fundamental 4</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <br class="mb-4">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-5">
+                            <p>Equipo No. 2: Sistemas Operativos</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <!--Bootstrap de javascript-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Script-->
+    <script src="js/script.js"></script>
+</body>
+</html>

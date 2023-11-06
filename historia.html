@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Integrador de Aprendizaje - v1.1</title>
+    <!--Bootrsrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/65caae80ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper ">
+        <!--SideBar-->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">
+                        <img src="img/Windows 11.png" alt="" class="img-logo">
+                        Sistemas Operativos
+                    </a>
+                </div>
+                <!--Navegacion de tabla de contenido-->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        producto integrador de aprendizaje
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#windows11" aria-expanded="false" aria-controls="windows11">
+                            <i class="fa-brands fa-windows pe-2"></i>
+                            windows 11
+                        </a>
+                        <ul id="windows11" class="sidebar-dropdown list-unstyled collapse text-capitalize" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="windows.html" class="sidebar-link">¿Que es?</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="historia.html" class="sidebar-link">Historia</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="cli.html" class="sidebar-link">CLI</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="kernell.html" class="sidebar-link">Kernell</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="archivos.html" class="sidebar-link">sistemas de archivos</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="concurrencia.html" class="sidebar-link">Concurrencia</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="dispositivos.html" class="sidebar-link">Dispositivos E/S</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#afunda" aria-expanded="false" aria-controls="afunda">
+                            <i class="fa-solid fa-folder-open pe-2"></i>
+                            Actividades Fundamentales
+                        </a>
+                        <ul id="afunda" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/ActivdadFundamental1_EQUIPO2_COMPLETADO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF2-SISOP-COMPLETO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF3-SISOP-EQ2_COMPLETO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 3</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF4-SISOP-COMPLETADO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#conclusion" aria-expanded="false" aria-controls="conclusion">
+                            <i class="fa-solid fa-flag pe-2"></i>
+                            Conclusiones
+                        </a>
+                        <ul id="conclusion" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="conclusiones.html" class="sidebar-link">Conclusion General</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="conclusiones.html" class="sidebar-link">Conclusion individual</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link text-capitalize">
+                            <i class="fa-solid fa-user pe-2"></i>
+                            Acerca de
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--Componentes principales-->
+        <div class="container main">
+            <nav class="row navbar navbar-expand px-3 border-bottom">
+                <!--Boton de hamburguesa-->
+                <div class="col-6">
+                    <button class="btn" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <!--Componentes de card glassmorph-->
+            <div class="row vh-25 mt-4 banner d-flex align-items-center justify-content-start">
+                <div class="col-sm-12 col-lg-6 text-white">
+                    <h1 class="card-title mb-4 text-capitalize">Historia:<br><span class="h5 text-primary">¿Cómo ha evolucionado?</span></h1>
+                    <!--Texto de la card-->
+                    <p class="card-text mb-4">Windows es un sistema operativo desarrollado por la compañía Microsoft. Consiste en un software conformado por un conjunto de programas que permiten gestionar y controlar el funcionamiento de las partes de un ordenador, como la memoria, el disco de almacenamiento y los dispositivos periféricos, y la ejecución de otros programas y aplicaciones.
+                    </p>
+                    <a href="#introduccion" class="btn btn-outline-light">Ver más</a>
+                </div>
+            </div>
+
+            <!--Cards informativas/seccion informativa-->
+
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 id="introduccion" class="heading-que-es text-primary"> Windows 1.0</h3>
+                                    <p class="para-que-es">
+                                        En 1985 Microsoft publicó la primera versión de Windows (Windows 1.0), una [interfaz gráfica de usuario](GUI) para su propio sistema operativo (MS-DOS) que había sido incluido en el IBM PC y ordenadores compatibles desde 1981. La interfaz gráfica fue creada después del MacOS de Apple. La primera versión de Microsoft Windows nunca fue demasiado potente, ni tampoco se hizo popular. Estaba duramente limitada debido a los recursos legales de Apple. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/w1.0.jpg" class="img-que-es" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/w2.0.jpg" style="top: -50%;"class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-primary"><span class="text-white">Windows 2.0</span></h3>
+                                    <p class="para-que-es">
+                                        Microsoft Windows 2 salió en 1987, y fue un poco más popular que la versión inicial. Gran parte de esta popularidad la obtuvo de la inclusión en forma de versión "run-time" de nuevas aplicaciones gráficas de Microsoft, [Microsoft Excel] y [Microsoft Word] para Windows. Éstas podían cargarse desde MS-DOS, ejecutando Windows a la vez que el programa, y cerrando Windows al salir de ellas. Windows 2 todavía usaba el modelo de memoria 8088 y por ello estaba limitado a 1 megabyte de memoria, sin embargo, mucha gente consiguió hacerlo funcionar bajo sistemas multitareas como DesqView.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 id="introduccion" class="heading-que-es text-primary"> Windows 3.0</h3>
+                                    <p class="para-que-es">
+                                        La primera versión realmente popular de Windows fue la versión 3.0, publicada en 1990. Ésta se benefició de las mejoradas capacidades gráficas para PC de esta época, y también del procesador [microprocesador 80386] que permitía mejoras en las capacidades multitarea de las aplicaciones Windows.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/w3.0.png" style="top:-80%;"class="img-que-es" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/w3.1.png" class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-primary"><span class="text-white">Windows 3.1 y Windows 3.11</span></h3>
+                                    <p class="para-que-es">
+                                        En respuesta a la inminente aparición de OS/2 2.0, Microsoft desarrolló Windows 3.1, que incluía diversas pequeñas mejoras a Windows 3.0 (como las fuentes escalables TrueType), pero que consistía principalmente en soporte multimedia. Más tarde Microsoft publicó también Windows 3.11 (denominado Windows para trabajo en grupo), que incluía controladores y protocolos mejorados para las comunicaciones en red y soporte para redes punto a punto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 id="introduccion" class="heading-que-es text-primary"> Windows 4.0</h3>
+                                    <p class="para-que-es">
+                                        Windows NT 4.0 fue la cuarta versión del sistema operativo de Microsoft Windows NT, lanzado en 1996.
+                                        Su interfaz es similar a la de Windows 95, y es un sistema de 32 bits.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/wnt4.0.png" class="img-que-es" style="top: -90%;"alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/win95.jpg" style="top: -90%;"class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-primary"><span class="text-white">Windows 95</span></h3>
+                                    <p class="para-que-es">
+                                        El 24 de agosto de 1995 Microsoft lanza Windows 95, el cual supone un record de ventas con 7 millones de copias en 5 semanas. Es el lanzamiento más publicitado de Microsoft.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 id="introduccion" class="heading-que-es text-white"> Windows 98</h3>
+                                    <p class="para-que-es">
+                                        Fue presentado el 25 de junio de 1998, Windows 98 (con nombre en clave Memphis) es la primera versión de Windows diseñada específicamente para los consumidores. Los equipos informáticos son habituales en la oficina y en el hogar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/win98.jpg" style="top: -90%;"class="img-que-es" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/windows-2000.jpg" class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-primary"><span class="text-white">Windows 2000</span></h3>
+                                    <p class="para-que-es">
+                                        Se puso en circulación el 17 de febrero del 2000, conocido durante su desarrollo como NT 5.0. Es una versión útil para los administradores de sistemas, tuvo éxito tanto en el mercado de los servidores como en el de las estaciones de trabajo.
+                                        Es un sistema operativo para empresas, y algunas de las tareas que puede realizar son: crear cuentas de usuarios, asignar recursos y privilegios, actuar como servidor web, FTP, servidor de impresión, DNS, DHCP, etc.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 id="introduccion" class="heading-que-es text-white"> Windows XP</h3>
+                                    <p class="para-que-es">
+                                        Las letras “XP” provienen de la palabra eXPerience y su periodo de desarrollo fue menor a 18 meses, concretamente entre diciembre de 1999 y agosto de 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-5">
+                                <img src="img/winxp.jpg" style="top: -120%;" class="img-que-es" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/winvista.jpg" style="top: -80%;"class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-primary"><span class="text-white">Windows Vista</span></h3>
+                                    <p class="para-que-es">
+                                        Microsoft comenzó a trabajar en los planes de desarrollo de Windows Vista
+                                    </p>
+                                    <p class="para-que-es">
+                                        Inicialmente estaba previsto para ser lanzado a finales de 2003 como un paso menor entre Windows XP
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 id="introduccion" class="heading-que-es text-primary"> Windows 7</h3>
+                                    <p class="para-que-es">
+                                        El desarrollo de este sistema operativo comenzó inmediatamente después del lanzamiento de Windows Vista. El 20 de julio de 2007 se reveló que ese sistema operativo era llamado internamente por Microsoft como la versión 7. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/win7.png" style="top: -100%"class="img-que-es" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/win8.jpg" style="top: -45%;" class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-primary"><span class="text-white">Windows 8 y 8.1</span></h3>
+                                    <p class="para-que-es">
+                                        Prácticamente tres años después, el 26 de octubre de 2012, se lanzó esta nueva versión. Una versión que añadía soporte para microprocesadores ARM y cuya interfaz llegaba modificada para hacerla más adecuada para su uso con pantallas táctiles, mostrando nuevos efectos planos para ventanas y botones con un color simple.
+                                    </p>
+                                    <p class="para-que-es">
+                                        Esto supuso también la eliminación del clásico menú de Inicio por Tiles, algo que no fue del agrado de la gran mayoría de usuarios. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="que-es-container cq1">
+                    <div class="que-es">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/win10.jpg" style="top: -40%;"class="img-que-es-2" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-5">
+                                <div class="content-que-es">
+                                    <h3 class="heading-que-es text-primary"><span class="text-white">Windows 10</span></h3>
+                                    <p class="para-que-es">
+                                        Fue el 29 de julio de 2015 cuando Microsoft lanzó la última y esperada versión de su sistema operativo, Windows 10, hasta la llegada de Windows 11 en el 2021. Una versión que cuenta con un gran conjunto de aplicaciones, una interfaz moderna con un gran rendimiento y que, además, es multiplataforma. Es decir, permite su utilización en ordenadores y dispositivos móviles.
+                                    </p>
+                                    <a href="windows.html" class="btn btn-primary">Ver Windows 11</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Inicio de las cards-->
+            <div class="row mt-2 mb-4 banner ">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="animated-text card-container">
+
+                        <!--Card-->
+                        <div class="card m-2 cb1" >
+                            <!--Cuerpo del card-->
+                            <div class="card-body text-white">
+                                <!--Titulo de la card-->
+                              <h3 class="card-title mb-4">MS-DOS</h3>
+                              <!--Texto de la card-->
+                              <p class="card-text mb-4"> MS-DOS es un sistema que confiaba puramente en una interfaz de línea de comandos para funcionar, con un total de 109 comandos con los que movernos por el sistema y utilizar sus capacidades.</p>
+                              <a href="cli.html" class="btn btn-outline-light">Ver más</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="animated-text card-container">
+
+                        <!--Card-->
+                        <div class="card m-2 cb2" >
+                            <!--Cuerpo del card-->
+                            <div class="card-body text-white">
+                                <!--Titulo de la card-->
+                              <h3 class="card-title mb-4 text-info">OS/2 1</h3>
+                              <!--Texto de la card-->
+                              <p class="card-text mb-4"> IBM publicó OS/2 versión 2.0 en 199x. Esta versión suponía un gran avance frente a OS/2 1.3. Incorporaba un nuevo sistema de ventanas</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="animated-text card-container">
+
+                        <!--Card-->
+                        <div class="card m-2 cb1" >
+                            <!--Cuerpo del card-->
+                            <div class="card-body text-white">
+                                <!--Titulo de la card-->
+                              <h3 class="card-title mb-4">OS/ 2.0</h3>
+                              <!--Texto de la card-->
+                              <p class="card-text mb-4">IBM publicó OS/2 versión 2.0 en 199x. Esta versión suponía un gran avance frente a OS/2 1.3. Incorporaba un nuevo sistema de ventanas</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="bg-transparent text-white pt-5 pb-4 border-top border-white">
+                <div class="container text-center text-md-left">
+                    <div class="row text-center text-md-left">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">Sistemas Operativos</h5>
+                            <p>Página web elaborada con fines educativos sobre el sistema operativo <span class="text-primary text-capitalize">windows 11</span></p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">Windows 11</h5>
+                            <p>
+                                <a href="windows.html" class="text-reset">¿Qué es?</a>
+                            </p>
+                            <p>
+                                <a href="historia.html" class="text-reset">Historia</a>
+                            </p>
+                            <p>
+                                <a href="cli.html" class="text-reset">CLI</a>
+                            </p>
+                            <p>
+                                <a href="kernell.html" class="text-reset">Kernell</a>
+                            </p>
+                            <p>
+                                <a href="archivos.html" class="text-reset">Sistemas de Archivos</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">
+                                Más Enlaces
+                            </h5>
+                            <p>
+                                <a href="concurrencia.html" class="text-reset">Concurrencia</a>
+                            </p>
+                            <p>
+                                <a href="dispositivos.html" class="text-reset">Dispositivos de E/S</a>
+                            </p>
+                            <p>
+                                <a href="conclusiones.html" class="text-reset">Conclusiones</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
+                            <h5 class="text-uppercase mb-4 fw-bold text-primary">
+                                Actividades Funtamentales
+                            </h5>
+                            <p>
+                                <a href="act-fundamentales/ActivdadFundamental1_EQUIPO2_COMPLETADO.pdf" class="text-reset">Actividad Fundamental 1</a>
+                            </p>
+                            <p>
+                                <a href="act-fundamentales/AF2-SISOP-COMPLETO.pdf" class="text-reset">Activdad Fundamental 2</a>
+                            </p>
+                            <p>
+                                <a href="act-fundamentales/AF3-SISOP-EQ2_COMPLETO.pdf" class="text-reset">Actividad Fundamental 3</a>
+                            </p>
+                            <p>
+                                <a href="act-fundamentales/AF4-SISOP-COMPLETADO.pdf" class="text-reset">Actividad Fundamental 4</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <br class="mb-4">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-5">
+                            <p>Equipo No. 2: Sistemas Operativos</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <!--Bootstrap de javascript-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Script-->
+    <script src="js/script.js"></script>
+</body>
+</html>

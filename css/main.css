@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.wrapper
+{
+    background: url('../img/bg-header.png') rgba(0,0,0,0.3);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.img-logo {
+    width: 40px;
+}
+
+.vh-50 {
+    height: 50vmin;
+}
+
+
+/* Estilo glassmorph de las cards */
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    padding: 5rem 2.5rem;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+}
+
+.cb1 {
+    background-color: rgba(225,225,225,0.1);
+    width: 100%;
+}
+
+.cb2 {
+    background: linear-gradient(to right bottom, rgba(225,225,255,0.5), rgba(225,225,225,0.3));
+}
+
+/* Imagenes de fondo de flip-cards*/
+
+.box-item-1 .flip-box-front, .box-item-1 .flip-box-back {
+    background: url("../img/w11-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.box-item-2 .flip-box-front, .box-item-2 .flip-box-back {
+    background: url("../img/cli-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-item-3 .flip-box-front, .box-item-3 .flip-box-back {
+    background: url("../img/kernell.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-item-4 .flip-box-front, .box-item-4 .flip-box-back {
+    background: url("../img/file-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+.box-item-5 .flip-box-front, .box-item-5 .flip-box-back {
+    background: url("../img/process.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-item-6 .flip-box-front, .box-item-6 .flip-box-back {
+    background: url("../img/hrd-bg.jpg") rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center;
+}
+
+.box-item-7 .flip-box-front, .box-item-7 .flip-box-back {
+    background: url("../img/af-bg.jpg") rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Estilo de Flip-cards */
+
+.flip-box {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.flip-box-front, .flip-box-back {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 375px;
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+    backface-visibility: hidden;
+
+}
+
+.flip-box-front {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+
+}
+
+.flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+    position: absolute;
+    left:0;
+    width: 100%;
+    padding: 60px;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+    transform: translateY(-50%)translateZ(60px) scale(0.94);
+    top: 50%;
+}
+
+.flip-box-header {
+    font-size: 30px;
+}
+
+.flip-box p {
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+
+.flip-box-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+.row-2 {
+    margin-top: -100px;
+}
+.row-3 {
+    margin-top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* seccion de que es estilo */
+
+.cq1 {
+    width: 100%;
+    background-color: rgba(225,225,225,0.1);
+}
+
+.que-es-container {
+    width: 100%;
+    margin-top: 50px;
+
+
+    border: 1px solid transparent;
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+    
+}
+
+.que-es {
+    width: 100%;
+    margin-top: 150px;
+
+    position: relative;
+}
+
+.content-que-es {
+    padding: 10px 38px;
+}
+
+.heading-que-es {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-que-es::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background-color: blue;
+    width: 46px;
+    height: 2px;
+}
+
+.para-que-es {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.695);
+    line-height: 21px;
+    margin: 25px 0;
+
+}
+
+.img-que-es {
+    height: 420px;
+    width: 50%;
+    position: absolute;
+    top: -70%;
+    right: 20px;
+}
+
+.img-que-es-2 {
+    height: 420px;
+    width: 50%;
+    position: absolute;
+    top: -65%;
+    right: 610px;
+}
+
+/* Esqueleto del menu */
+.wrapper {
+    /*align-items: stretch;*/
+    display: flex;
+    width: 100%;
+}
+
+.animated-text .span {
+    position: relative;
+}
+
+.animated-text .span::before {
+    content: "Producto Integrador de Aprendizaje";
+    animation: word 20s infinite;
+}
+
+.animated-text .span::after {
+    content: "";
+    position: absolute;
+    top:0.5px;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #0c1933;
+    border-left: 2px solid;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(20) infinite;
+}
+
+/* Estilos del sidebar */
+
+#sidebar {
+    max-width: 364px;
+    min-width: 364px;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49,57,66,0.5);
+    z-index: 1111;
+    background: #06142e;
+}
+
+.h-100{
+    position: fixed;
+    width: 364px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background: #0c1933;
+    width: 100%;
+}
+
+.banner {
+    padding-top: 8%;
+    
+}
+
+/* colapso del menu lateral */
+#sidebar.collapsed {
+
+    margin-left: -364px;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+.main p {
+    color: #fff;
+}
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding:0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    padding: 1.5rem 1.5rem 0.375rem;
+}
+
+a.sidebar-link {
+    padding: 0.625rem 1.625rem;
+    color: #e0ecef;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 0.075rem 0.075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all 0.2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all 0.2s ease-out;
+}
+
+@media (min-width: 768px) {
+    .content {
+        width: auto;
+    }
+}
+
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #06142e;
+    }
+}
+
+@keyframes word {
+    0%,20% {
+        content: "Equipo 2"
+    }
+    21%,40% {
+        content: "Producto Integrador de Aprendizaje"
+    }
+    41%,60% {
+        content: "Equipo 2"
+    }
+    61%,80% {
+        content: "Producto Integrador de Aprendizaje"
+    }
+    81%,100% {
+        content: "Equipo 2";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 8px);
+    }
+}
